@@ -1,5 +1,5 @@
 //
-//  RegistrationViewController.swift
+//  LoggedInViewController.swift
 //  OnboardingDemo
 //
 //  Created by Serene Mirza on 5/31/16.
@@ -8,15 +8,10 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
-    
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
-    
+class LoggedInViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Register"
 
         // Do any additional setup after loading the view.
     }
@@ -26,18 +21,6 @@ class RegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func registerButtonPressed(sender: UIButton) {
-        var (failure_message, user) = UserController.sharedInstance.registerUser(emailField.text!, newPassword: passwordField.text!)
-        
-        if ((user?.email) != nil) {
-            print("User registered in registration view")
-        }
-        else {
-            if failure_message != nil && failure_message != "" {
-                print("\(failure_message)")
-            }
-        }
-    }
 
     /*
     // MARK: - Navigation

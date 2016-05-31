@@ -18,6 +18,8 @@
 		7D1DBEC11CFD954600E2347F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1DBEBF1CFD954600E2347F /* RegistrationViewController.swift */; };
 		7D1DBEC21CFD954600E2347F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1DBEC01CFD954600E2347F /* RegistrationViewController.xib */; };
 		7D1DBEC51CFD9D0D00E2347F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1DBEC41CFD9D0D00E2347F /* UserController.swift */; };
+		7D1DBEC81CFDDC6900E2347F /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1DBEC61CFDDC6900E2347F /* LoggedInViewController.swift */; };
+		7D1DBEC91CFDDC6900E2347F /* LoggedInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1DBEC71CFDDC6900E2347F /* LoggedInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7D1DBEBF1CFD954600E2347F /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		7D1DBEC01CFD954600E2347F /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		7D1DBEC41CFD9D0D00E2347F /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		7D1DBEC61CFDDC6900E2347F /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		7D1DBEC71CFDDC6900E2347F /* LoggedInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoggedInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		7D1DBEC31CFD9A3900E2347F /* LoggedIn */ = {
 			isa = PBXGroup;
 			children = (
+				7D1DBEC61CFDDC6900E2347F /* LoggedInViewController.swift */,
+				7D1DBEC71CFDDC6900E2347F /* LoggedInViewController.xib */,
 			);
 			name = LoggedIn;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 				7D1DBEC21CFD954600E2347F /* RegistrationViewController.xib in Resources */,
 				7D1DBEBE1CFD83FB00E2347F /* LoginViewController.xib in Resources */,
 				7D1DBEBA1CFD829100E2347F /* LandingViewController.xib in Resources */,
+				7D1DBEC91CFDDC6900E2347F /* LoggedInViewController.xib in Resources */,
 				7D1DBEAF1CFD812200E2347F /* LaunchScreen.storyboard in Resources */,
 				7D1DBEAC1CFD812200E2347F /* Assets.xcassets in Resources */,
 			);
@@ -176,6 +183,7 @@
 				7D1DBEA71CFD812200E2347F /* ViewController.swift in Sources */,
 				7D1DBEB91CFD829100E2347F /* LandingViewController.swift in Sources */,
 				7D1DBEA51CFD812200E2347F /* AppDelegate.swift in Sources */,
+				7D1DBEC81CFDDC6900E2347F /* LoggedInViewController.swift in Sources */,
 				7D1DBEC11CFD954600E2347F /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +326,7 @@
 				7D1DBEB51CFD812200E2347F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,7 @@ class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Whatever title"
+        self.title = "Menu"
 
         
         // Do any additional setup after loading the view.

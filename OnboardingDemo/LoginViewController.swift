@@ -37,7 +37,12 @@ class LoginViewController: UIViewController {
             appDelegate.navigateToLoggedInNavigationController()
         }
         else {
-            print("\(failure_message)")
+            let alertController = UIAlertController(title: "Error", message: "\(failure_message!)", preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in }
+            alertController.addAction(cancelAction)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
+            alertController.addAction(OKAction)
+            self.presentViewController(alertController, animated: true) {}
         }
     }
 

@@ -48,6 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = self.authorisationNavController
         
     }
+    
+    func alert(mesg: String) {
+        let alertController = UIAlertController(title: "Default Style", message: "A standard alert.", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in }
+        alertController.addAction(cancelAction)
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
+        alertController.addAction(OKAction)
+    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

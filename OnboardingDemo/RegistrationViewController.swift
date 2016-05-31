@@ -10,6 +10,8 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
     
+    let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -31,6 +33,7 @@ class RegistrationViewController: UIViewController {
         
         if ((user?.email) != nil) {
             print("User registered in registration view")
+            appDelegate.navigateToLoggedInNavigationController()
         }
         else {
             if failure_message != nil && failure_message != "" {

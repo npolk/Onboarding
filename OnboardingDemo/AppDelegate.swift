@@ -21,10 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let landingViewController = LandingViewController(nibName: "LandingViewController", bundle: nil)
-        
-        //should loggedInNavigationController be in this function?
-        
         authorisationNavController = UINavigationController(rootViewController: landingViewController)
+        
+        //let loggedInNavigationController = LoggedInViewController(nibName: "LoggedInViewController", bundle: nil)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = self.authorisationNavController
@@ -38,6 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let loggedInNavigationController = LoggedInViewController(nibName: "LoggedInViewController", bundle: nil)
         loggedInNavController = UINavigationController(rootViewController: (loggedInNavigationController))
+        self.window?.rootViewController = self.loggedInNavController
+        
+    }
+    
+    func  navigateToLandingViewController() {
+        
+        let landingViewController = LandingViewController(nibName: "LandingViewController", bundle: nil)
+        authorisationNavController = UINavigationController(rootViewController: landingViewController)
+        self.window?.rootViewController = self.authorisationNavController
         
     }
 
